@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Game</title>
+
+    <!--RESORUCES-->
+    <!--link to Bootstrap font style sheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--link to the JQuery Library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="pager-header">
+        <h1>Crystal Collector</h1>
+    </div>
+
+    <div class= "Instructions-area">
+        <p>You wil be given a random number at the start of each game.</p>
+        <br>
+        <p>There are 4 buttons below. When you click a button you will add a 
+            specific amount of points to your score.</p>
+        <br>
+        <p>You win a game by matching your total button score to the random value,
+            you lose the game if your score exceeds the random number.
+        </p>
+        <br>
+        <p>The value of each button is hidden, until 
+            you click on it and it is added to your score.</p>
+        <br>
+        <p>Each time a new game starts, the values of each but resets.</p>
+        <br>
+        <p>Good Luck!!!!</p>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <p id="random-number-box"></p>
+        </div>
+        <div class="col-lg-4">
+            <p class="win-score">wins: 0</p>
+            <p class="losses-score">lossess: 0</p>
+        </div>
+    </div>
+
+    <div class="row">
+       <div class="col-lg-3">
+        <button id="gem-1" class="btn btn-primary btn-lg fa fa-bolt gems"></button>
+       </div>
+       <div class="col-lg-3">
+        <button id="gem-2" class="btn btn-primary btn-lg fa fa-battery gems"></button>
+       </div>
+       <div class="col-lg-3">
+        <button id="gem-3" class="btn btn-primary btn-lg fa fa-bomb gems"></button>
+       </div>
+       <div class="col-lg-3">
+        <button id="gem-4" class="btn btn-primary btn-lg fa fa-diamond gems"></button>
+       </div>
+    </div> 
+
+
+    <div class="gem-score-header">
+        <p>Total button score is:</p>
+    </div>
+    <div id="score-box">
+        <p id="gem-score-box">Score Box area</p>
+    </div>
+
+</div>
+
+<script src="assets/javascript/game.js"></script>
+
+
+</body>
+
+
+</html>
